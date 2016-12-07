@@ -20,23 +20,7 @@ app.controller('appCtrl', ['$scope', '$http', '$state', '$location', '$cookies',
     };
 
     $scope.login = function (user, pass) {
-        // $http.post('http://business.agombi.co.il/api/businessUsers/login', { username: user, password: pass }).then(function (result) {
-        //     $scope.accessToken = result.data.id;
-        //     $cookies.put("accessToken", $scope.accessToken);
-        //     $http.get('http://business.agombi.co.il/api/businessUsers/me?access_token=' + $scope.accessToken).then(function (resultMe) {
-        //         $scope.username = resultMe.data.username;
-        //         $cookies.put("username", $scope.username);
-        //         $location.path('/grid');
-        //         $scope.loginFail = false;
-        //     }, function (err) {
-        //         console.log(err);
-        //         $scope.loginFail = true;
-        //     });
-
-        // }, function (err) {
-        //     console.log(err);
-        //     $scope.loginFail = true;
-        // });
+        
     };
 
 }]);

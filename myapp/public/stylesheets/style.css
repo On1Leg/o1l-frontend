@@ -23,3 +23,17 @@ html, body{
     margin: auto;
     margin-top: 5%;
 }
+
+md-card{
+    background-color: #757d88 !important;
+}
+
+.slide div, md-card{
+    height: 100% !important;
+}
+
+.jk-carousel{
+    width: 100% !important;
+    margin: auto !important;
+    margin-top: 5% !important;
+}

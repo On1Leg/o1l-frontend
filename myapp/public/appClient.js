@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ui.router', 'ngCookies', 'ngMaterial']);
+var app = angular.module('myApp', ['ui.router', 'ngCookies', 'ngMaterial', 'jkAngularCarousel']);
 
 app.config(['$stateProvider', '$urlRouterProvider', '$mdThemingProvider', '$mdDateLocaleProvider', function ($stateProvider, $urlRouterProvider, $mdThemingProvider, $mdDateLocaleProvider) {
 

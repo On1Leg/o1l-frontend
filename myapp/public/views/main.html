@@ -15,5 +15,20 @@
     </form>
 </div>
 <jk-carousel data="arrayData" item-template-url="'views/item-template.html'" max-width="700" max-height="400" auto-slide="true"
-    auto-slide-time="5000" >
+    auto-slide-time="5000">
 </jk-carousel>
+<div ng-repeat="element in arrayData" id="history">
+    <md-card md-theme="{{ 'dark-purple' }}" md-theme-watch>
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">Name: {{element.name}}</span>
+                <span class="md-subhead">Cost: {{element.price}}$</span>
+                <span class="md-subhead">Views: {{element.views}}</span>
+                <span class="md-subhead">Start Date: {{element.date}}</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-actions layout-align="end center">
+            <md-button class="md-primary">Connect</md-button>
+        </md-card-actions>
+    </md-card>
+</div>

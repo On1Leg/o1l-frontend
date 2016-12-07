@@ -1,0 +1,30 @@
+<form ng-submit="login(user, pass)" class="login">
+    <div class="caption caption-md">
+        <i class="icon-globe theme-font hide"></i>
+        <span class="caption-subject bold uppercase"><bold>ברוכים הבאים!</bold> התחברו בבקשה.</span>
+    </div>
+    <div class="form-group">
+        <!--<label class="control-label">שם משתמש</label>-->
+        <div class="input-icon">
+            <i class="fa fa-user"></i>
+            <input type="text" ng-model="user" class="form-control" placeholder="שם משתמש">
+        </div>
+    </div>
+    <div class="form-group">
+        <!--<label class="control-label">סיסמה</label>-->
+        <div class="input-icon">
+            <i class="fa fa-lock"></i>
+            <input type="password" ng-model="pass" class="form-control" placeholder="סיסמה">
+        </div>
+    </div>
+    <div class="margin-top-10">
+        <input type="submit" class="btn green-haze" value="התחבר">
+    </div>
+
+</form>
+
+<div class="caption caption-md login" ng-show="loginFail">
+    <i class="icon-globe theme-font hide"></i>
+    <span class="caption-subject bold uppercase">ההתחברות נכשלה, נסה שוב!</span>
+</div>
+

@@ -2,19 +2,29 @@
 <html lang="en">
 
 <head>
-    <title>OnOneLeg</title>
+    <title>On One Leg</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <!--<link rel="shortcut icon" href="images/ic_launcher.png" /> </head>-->
+    <link rel="shortcut icon" href="/images/flamingo.png" />
     <link rel="stylesheet" href="/angular-material/angular-material.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body ng-app="myApp" ng-controller="appCtrl" layout="column" ng-init="init()">
-    <h1>shirel</h1>
-    <div>
-                <div ui-view></div>
-    </div>
+    <md-toolbar flex="10" layout="row" layout-align="space-between center">
+        <!--The left side-->
+        <span> <h2 class="md-toolbar-tools"> On One Leg </h2></span>
+        <!--The right side-->
+        <span>
+            <md-button aria-label="login" ui-sref="login"> Login </md-button>
+            <md-button aria-label="signin" ui-sref="signin"> Sign in </md-button>
+            <md-button aria-label="help" ui-sref="help"> Help </md-button>
+        </span>
+    </md-toolbar>
+
+    <div flex ui-view></div>
+
     <script type="text/javascript" src="\angular\angular.js"></script>
     <script src="/angular-ui-router/release/angular-ui-router.js" type="text/javascript"></script>
     <script src="/angular-cookies/angular-cookies.js" type="text/javascript"></script>

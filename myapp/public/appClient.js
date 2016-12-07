@@ -3,8 +3,8 @@ var app = angular.module('myApp', ['ui.router', 'ngCookies', 'ngMaterial']);
 app.config(['$stateProvider', '$urlRouterProvider', '$mdThemingProvider', '$mdDateLocaleProvider', function ($stateProvider, $urlRouterProvider, $mdThemingProvider, $mdDateLocaleProvider) {
 
     $mdThemingProvider.theme('default')
-        .primaryPalette('teal')
-        .accentPalette('blue');
+        .primaryPalette('light-blue')
+        .accentPalette('pink');
 
     $mdDateLocaleProvider.firstDayOfWeek = 0;
 
@@ -13,10 +13,22 @@ app.config(['$stateProvider', '$urlRouterProvider', '$mdThemingProvider', '$mdDa
             url: '/main',
             templateUrl: 'views/main.html'
         })
+        .state('signin', {
+            url: '/signin',
+            templateUrl: 'views/signin.html'
+        })
+        .state('login', {
+            url: '/login',
+            templateUrl: 'views/login.html'
+        })
+        .state('help', {
+            url: '/help',
+            templateUrl: 'views/help.html'
+        })
         .state('error', {
             url: '/error',
             templateUrl: 'views/error.html'
         })
 
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/main');
 }]);

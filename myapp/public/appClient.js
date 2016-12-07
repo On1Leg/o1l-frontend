@@ -4,7 +4,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$mdThemingProvider', '$mdDa
 
     $mdThemingProvider.theme('default')
         .primaryPalette('light-blue')
-        .accentPalette('pink');
+        .accentPalette('light-blue');
 
     $mdDateLocaleProvider.firstDayOfWeek = 0;
 

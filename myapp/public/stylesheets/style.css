@@ -17,3 +17,9 @@ html, body{
 .md-toolbar-tools{
     margin-left: 80%; 
 }
+
+#auto{
+    width: 70%;
+    margin: auto;
+    margin-top: 5%;
+}

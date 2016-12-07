@@ -37,3 +37,8 @@ md-card{
     margin: auto !important;
     margin-top: 5% !important;
 }
+
+#history{
+    width: 30% !important;
+    display: inline-block !important;
+}

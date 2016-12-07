@@ -25,6 +25,10 @@ app.config(['$stateProvider', '$urlRouterProvider', '$mdThemingProvider', '$mdDa
             url: '/help',
             templateUrl: 'views/help.html'
         })
+        .state('account', {
+            url: '/account',
+            templateUrl: 'views/account.html'
+        })
         .state('error', {
             url: '/error',
             templateUrl: 'views/error.html'
